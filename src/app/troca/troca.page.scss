@@ -1,0 +1,43 @@
+/*  a cor de fundo  */
+ion-content {
+    --background: #3A4774; 
+  }
+
+  h1{
+    color: white;
+    font-size: 1.625rem;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 30vh; /* Define a altura da tela inteira */
+    
+  }
+  
+  p{
+    color: white;
+    margin: 0 30px
+  }
+
+ ion-input{
+   --background: #1a2948; 
+   --color:#DBDBDB;
+   width: 200px; /* Define a largura */
+   margin: auto; /* Centraliza horizontalmente e verticalmente */
+   --border-radius: 100%
+
+  }
+
+  .botao-personalizado {
+    /* Estilos personalizados aqui */
+    --background: #1a2948; /* Cor de fundo azul */
+    color: rgb(182, 180, 180); /* Cor do texto branco */
+    --border-color: #f9f9f9;
+    --border-style: solid;
+    --border-width: 1px;
+    width: fit-content; /*largura do botão */
+    margin: auto; /* Centraliza horizontalmente e verticalmente */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+
+  }
+  

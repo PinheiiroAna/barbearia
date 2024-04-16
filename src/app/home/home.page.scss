@@ -1,0 +1,44 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+
+ion-input{
+  --background: #1a2948; 
+  --color:#DBDBDB;
+  width: 200px; /* Define a largura */
+  margin: auto; /* Centraliza horizontalmente e verticalmente */
+  border-style: solid;
+  border-width: 1px;
+  margin: auto;
+
+ }
+
+ion-content {
+  --background: #3A4774;
+  /* Define a cor de fundo para o ion-content */
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+ion-p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
