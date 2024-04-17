@@ -1,14 +1,38 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cadastro</ion-title>
-  </ion-toolbar>
+ 
+  <link rel="stylesheet" type="text/css" href="cadastro.page.scss">
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cadastro</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <h1><strong>CADASTRE-SE</strong></h1>  <br>
+
+  <div id="container">
+    <br><br>
+
+    <ion-input type="name" label="Digite seu Nome" label-placement="floating" fill="outline"
+      placeholder="teste exemplo"></ion-input><br>
+      
+
+    <ion-input type="email" label="Digite seu Email" label-placement="floating" fill="outline"
+      placeholder="teste@exemplo.com"></ion-input><br>
+
+      <ion-input type="cel" label="Digite seu Celular" label-placement="floating" fill="outline"
+      placeholder="(DDD) XXXXX-XXXX"></ion-input><br>
+
+    <ion-input type="password" label="Senha" label-placement="floating" fill="outline" placeholder="********"></ion-input> <br>
+    <ion-input type="password" label="Confirmar Senha" id="password-confirmation" label-placement="floating" fill="outline" placeholder="********"></ion-input>
+   
+    <br>
+
+    <ion-button routerLink="/home">Entrar</ion-button>
+
+    <br><br>
+
+
+<ion-p routerLink="/cadastro">Já possui conta? Faça Login</ion-p>
+
+  </div>
+
 </ion-content>
 ionic generate page NovaPagina
