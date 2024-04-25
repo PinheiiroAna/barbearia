@@ -1,13 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>agendamento</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title>AGENDAMENTO</ion-title>
+</ion-toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">agendamento</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <div id="container">
+
+    <p>Escolha a data e hora:</p>
+      <img src="../../assets/Projeto/calendario.png" alt="Minha Imagem">
+      
+      <P>Escolha o Barbeiro:</P>
+      
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>PEDRO</span>
+      </div>
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>THIAGO</span>
+      </div>
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>JOÃO</span>
+      </div>
+      
+      <ion-button>AGENDAR</ion-button> 
+
+    </div>
+    </ion-content>
+    

@@ -1,3 +1,12 @@
+ion-toolbar {
+  --background: #3A4774;
+  /* Cor de fundo azul /
+  color: #fff;
+  / Cor do texto cinza */
+  margin: auto;
+  color: white;
+}
+
 /*  a cor de fundo  */
 ion-content {
     --background: #3A4774; 
@@ -20,7 +29,7 @@ ion-content {
 
  ion-input{
    --background: #1a2948; 
-   --color:#DBDBDB;
+   --color: #b6b4b4;
    width: 200px; /* Define a largura */
    margin: auto; /* Centraliza horizontalmente e verticalmente */
    --border-radius: 100%
@@ -30,9 +39,7 @@ ion-content {
   .botao-personalizado {
     /* Estilos personalizados aqui */
     --background: #1a2948; /* Cor de fundo azul */
-    color: rgb(182, 180, 180); /* Cor do texto branco */
-    --border-color: #f9f9f9;
-    --border-style: solid;
+    color: #b6b4b4;
     --border-width: 1px;
     width: fit-content; /*largura do botão */
     margin: auto; /* Centraliza horizontalmente e verticalmente */
