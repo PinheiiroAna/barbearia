@@ -1,24 +1,59 @@
-<ion-header [translucent]="true">
+<div class="body">
+
   <ion-toolbar>
-    <ion-title>serviço</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>SERVIÇOS</ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-back-button default-href="#"></ion-back-button>
-  </ion-buttons>
-  <ion-title></ion-title>
-  <!-- vai pra tela de agendamento-->
-  <ion-button routerLink="/agendamento">AGENDAR</ion-button>
-</ion-toolbar>
+  <ion-content [fullscreen]="true">
+    <div class="main">
+      <p>Selecione um serviço:</p>
+      <div class="container">
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/corte-de-barba_1.png" alt="Minha Imagem">
+                <span>Barba</span>
+              </div>
+            </ion-button>
+          </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">servico</ion-title>
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/corte-de-cabelo.png" alt="Minha Imagem">
+                <span>Corte</span>
+              </div>
+            </ion-button>
+          </div>
+
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/pintura.png" alt="Minha Imagem">
+                <span>Pintura</span>
+              </div>
+            </ion-button>
+          </div>
+
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/massagem.png" alt="Minha Imagem">
+                <span>Massagem</span>
+              </div>
+            </ion-button>
+          </div>
+
+      </div>
 
 
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+        <ion-button class="agendar" routerLink="/agendamento">AGENDAR</ion-button>
+
+    </div>
+
+
+  </ion-content>
+</div>
