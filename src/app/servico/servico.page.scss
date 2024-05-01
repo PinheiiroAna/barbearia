@@ -12,6 +12,10 @@ ion-content {
     height: 100vh;
 }
 
+ion-title{
+  margin-left: 50px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@ ion-content {
     justify-content: center;
 }
 
-.main p{
+.main H3{
     text-align: center;
     margin-top: 90px;
 }
@@ -50,4 +54,23 @@ ion-content {
 .btn{
     display: flex;
     flex-direction: column;
+    
 }
+
+H3{
+  color: #ffffff;
+}
+
+
+ion-fab[slot="fixed"] {
+  position: absolute;
+  bottom: -35px;  
+  right: 0px;  
+}
+
+ion-fab-button {
+  --background: #1a2948;  
+  --color: #b6b4b4; 
+  --bottom: -150px; 
+}
+

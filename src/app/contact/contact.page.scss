@@ -7,24 +7,26 @@
     right: 0;
     top: 50%;
     transform: translateY(-60%);
+    color: white;
 
 }
 
 p {
     font-size: 16px;
     line-height: 22px;
-    color: #b6b4b4;
+    color: #fffefe;
     margin: 0;
 }
 
 
 ion-title {
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 ion-content, ion-toolbar {
     --background: #3A4774;
     /* Define a cor de fundo para o ion-content e ion-toolbar */
+    color: white;
 }
 
 

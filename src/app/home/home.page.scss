@@ -59,3 +59,14 @@ ion-content {
 #container a {
   text-decoration: none;
 }
+
+ion-fab[slot="fixed"] {
+  position: absolute;
+  bottom: -150px;  
+  right: 0px;  
+}
+
+ion-fab-button {
+  --background: #1a2948;  
+  --color: #b6b4b4; 
+}
