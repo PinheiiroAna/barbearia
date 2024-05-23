@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <link rel="stylesheet" type="text/css" href="login.page.scss">
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+
+    <img src="../../assets/Projeto/Logo.png" alt="Minha Imagem">
+    <br> <br>
+
+    <ion-input label="Digite seu Email" label-placement="floating" fill="outline"
+      placeholder="teste@exemplo.com"></ion-input><br>
+    <ion-input type="password" label="Senha" label-placement="floating" fill="outline"
+      placeholder="********"></ion-input>
+
+    <p routerLink="/troca">Esqueci a senha</p>
+    <br> <br>
+
+    <ion-button routerLink="/servico">Entrar</ion-button>
+
+    <br><br>
+
+    <p>Ei, é sua primeira vez aqui?</p>
+    <ion-p routerLink="/cadastro"> Faça seu Cadastro</ion-p>
+
+  </div>
+
+</ion-content>
