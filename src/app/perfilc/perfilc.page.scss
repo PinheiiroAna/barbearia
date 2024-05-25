@@ -8,10 +8,25 @@ img{
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    padding: 2rem;
+}
+
+.main div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
 }
 
 ion-content{
-    width:100vw;
+    --background: #3A4774;
 }
+
+ion-toolbar {
+    --background: #3A4774;
+    margin: auto;
+    color: white;
+  }

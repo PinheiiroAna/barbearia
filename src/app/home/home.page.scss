@@ -1,6 +1,13 @@
 ion-content {
   --background: #3A4774;
-  /* Define a cor de fundo para o ion-content */
+  height: 100vh;
+  margin: 5px;
+}
+
+.main{
+  border: 1px solid #ffffff;
+  margin: 10px;
+  height: 100%;
 }
 
 #container {

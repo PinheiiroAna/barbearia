@@ -77,3 +77,28 @@ ion-content {
 #container a {
     text-decoration: none;
 }
+
+.google{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 8px 0px;
+    border: 2px solid #375899;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .google img{
+    height: 25px;
+  }
+  
+  .google label{
+    color: #375899;
+    font-size: 15pt;
+  
+  }
