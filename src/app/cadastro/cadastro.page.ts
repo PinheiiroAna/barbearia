@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '..services/auth.service';
+
 
 @Component({
   selector: 'app-cadastro',
@@ -7,17 +7,11 @@ import { AuthService } from '..services/auth.service';
   styleUrls: ['./cadastro.page.scss'],
 })
 export class CadastroPage implements OnInit {
-  name: string = '';
-  email: string = '';
-  cel: string = '';
-  password: string = '';
+ 
 
-  constructor(private authService: AuthService) { }
+  constructor () { }
 
-  ngOnInit() {
-    this.authService.cadastro(this.name, this.email, this.cel, this.password)
-  }
+  ngOnInit() {}
 
-  googleLogin()
-    this.authService.googleCadastro();
+  
 }
