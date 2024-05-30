@@ -15,4 +15,3 @@ const routes: Routes = [
 })
 export class HomePageRoutingModule {}
 
-/*ROTAS*/

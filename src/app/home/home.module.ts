@@ -18,4 +18,3 @@ import { HomePageRoutingModule } from './home-routing.module';
 })
 export class HomePageModule {}
 
-/*API OU BD*/

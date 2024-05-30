@@ -13,7 +13,7 @@ export class AuthService {
   async login(email: string, password: string) {
     try {
       await this.afAuth.signInWithEmailAndPassword(email, password);
-      this.router.navigate(['success']);
+      this.router.navigate(['servico']);
     } catch (error) {
       this.router.navigate(['failure']);
     }
@@ -22,13 +22,29 @@ export class AuthService {
   async googleLogin() {
     try {
       await this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-      this.router.navigate(['success']);
+      this.router.navigate(['servico']);
     } catch (error) {
       this.router.navigate(['failure']);
     }
+  }
+
+  async signInWithEmail(email: string, password: string) {
+    return await this.afAuth.signInWithEmailAndPassword(email, password);
+  }
+
+  async signInWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    return await this.afAuth.signInWithPopup(provider);
+  }
+
+  async signOut() {
+    return await this.afAuth.signOut();
   }
 
   logout() {
     this.afAuth.signOut();
   }
 }
+
+
+
