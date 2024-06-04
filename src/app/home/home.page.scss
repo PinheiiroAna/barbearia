@@ -1,0 +1,39 @@
+ion-content {
+  --background: #3A4774;
+  height: 100vh;
+  margin: 5px;
+}
+
+.main{
+  border: 1px solid #ffffff;
+  margin: 10px;
+  height: 97%;
+}
+
+#container {
+  text-align: center;
+}
+
+button {
+  color: #B6B4B4;
+  padding: 15px 0;
+  width: 40%;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  background-color: #011233ad;
+  font-size: 15pt;
+}
+
+.botao{
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 20%;
+  font-size: 25pt;
+  color: #ffffff;
+}

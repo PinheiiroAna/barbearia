@@ -1,0 +1,83 @@
+<div class="body">
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title><strong>  SERVIÇOS</strong></ion-title>
+  </ion-toolbar>
+
+  <ion-content [fullscreen]="true">
+    <div class="main">
+      <H3> <strong>Selecione um serviço:</strong></H3>
+      <div class="container">
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/corte-de-barba_1.png" alt="Minha Imagem">
+                <span>Barba</span>
+              </div>
+            </ion-button>
+          </div>
+
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/corte-de-cabelo.png" alt="Minha Imagem">
+                <span>Corte</span>
+              </div>
+            </ion-button>
+          </div>
+
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/pintura.png" alt="Minha Imagem">
+                <span>Pintura</span>
+              </div>
+            </ion-button>
+          </div>
+
+          <div>
+            <ion-button class="ionbutton">
+              <div class="btn">
+                <img src="../../assets/Projeto/massagem.png" alt="Minha Imagem">
+                <span>Massagem</span>
+              </div>
+            </ion-button>
+          </div>
+
+      </div>
+
+
+        <ion-button class="agendar" routerLink="/agendamento">AGENDAR</ion-button>
+        
+        <ion-content class="ion-padding">
+          <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+            <ion-fab-button>
+              <ion-icon name="chevron-up-circle"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="top">
+              <ion-fab-button>
+                <ion-icon name="cog-outline"routerLink="/perfila"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="people-sharp"routerLink="/contact"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="calendar-sharp"routerLink="/agendamento"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="bag-handle-sharp" routerLink="/servico"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="person-sharp"routerLink="/perfilc"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+        </ion-content>
+    </div>
+
+
+  </ion-content>
+</div>

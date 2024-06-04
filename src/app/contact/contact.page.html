@@ -1,0 +1,56 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title><strong> SOBRE NÓS </strong></ion-title>
+</ion-toolbar>
+
+<ion-header [translucent]="true">
+  <link rel="stylesheet" type="text/css" href="contact.page.scss">
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+
+    <img src="../../assets/Projeto/Logo.png" alt="Minha Imagem">
+    <br> <br>
+
+
+    <p>A Navalha Fina, fundada por Ana Beatriz, Laís e Mayara em 1999, teve seu nome inspirado na tradição e
+      elegância
+      do barbear clássico. Seu aplicativo de agendamento, desenvolvido em 2024 pelos próprios
+      fundadores, oferece conveniência
+      aos clientes, mantendo a qualidade e personalização do serviço.</p>
+    <br> <br>
+
+
+    <ion-content class="ion-padding">
+      <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+        <ion-fab-button>
+          <ion-icon name="chevron-up-circle"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button>
+            <ion-icon name="cog-outline"routerLink="/perfila"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button>
+            <ion-icon name="people-sharp"routerLink="/contact"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button>
+            <ion-icon name="calendar-sharp"routerLink="/agendamento"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button>
+            <ion-icon name="bag-handle-sharp" routerLink="/servico"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button>
+            <ion-icon name="person-sharp"routerLink="/perfilc"></ion-icon>
+          </ion-fab-button>
+          
+        </ion-fab-list>
+      </ion-fab>
+    </ion-content>
+  </div>
+</ion-content>

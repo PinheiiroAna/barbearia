@@ -1,0 +1,59 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-title> <strong>AGENDAMENTO</strong></ion-title>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <h3> <strong>Escolha a data e hora:</strong></h3>
+      <img src="../../assets/Projeto/calendario.png" alt="Minha Imagem">
+      
+      <h3> <strong>Escolha o Barbeiro:</strong></h3>
+      
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>PEDRO</span>
+      </div>
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>THIAGO</span>
+      </div>
+      <div class="checkbox-container">
+        <ion-checkbox></ion-checkbox>
+        <span>JOÃO</span>
+      </div>
+      
+      <ion-button>AGENDAR</ion-button> 
+      <br>
+       
+      <ion-content class="ion-padding">
+        <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+          <ion-fab-button>
+            <ion-icon name="chevron-up-circle"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-list side="top">
+            <ion-fab-button>
+              <ion-icon name="cog-outline"routerLink="/perfila"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="people-sharp"routerLink="/contact"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="calendar-sharp"routerLink="/agendamento"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="bag-handle-sharp" routerLink="/servico"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+              <ion-icon name="person-sharp"routerLink="/perfilc"></ion-icon>
+            </ion-fab-button>
+          </ion-fab-list>
+        </ion-fab>
+      </ion-content>
+    </div>
+   
+    </ion-content>
+    

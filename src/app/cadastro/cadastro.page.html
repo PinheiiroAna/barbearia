@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+
+  <link rel="stylesheet" type="text/css" href="cadastro.page.scss">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h1><strong>CADASTRE-SE</strong></h1> <br>
+
+  <div id="container">
+    <br><br>
+
+    <ion-input type="name" label="Digite seu Nome" label-placement="floating" fill="outline"
+      placeholder="teste exemplo"></ion-input><br>
+
+
+    <ion-input type="email" label="Digite seu Email" label-placement="floating" fill="outline"
+      placeholder="teste@exemplo.com"></ion-input><br>
+
+    <ion-input type="cel" label="Digite seu Celular" label-placement="floating" fill="outline"
+      placeholder="(DDD) XXXXX-XXXX"></ion-input><br>
+
+    <ion-input type="password" label="Senha" label-placement="floating" fill="outline"
+      placeholder="********"></ion-input> <br>
+    <ion-input type="password-confirmation" label="Confirmar Senha" id="password-confirmation" label-placement="floating"
+      fill="outline" placeholder="********"></ion-input>
+
+
+    <br><br>
+
+    <div class="google">
+      <img src="../../assets/Projeto/google.png" alt="">
+      <label for="">Entrar com Google</label>
+    </div>
+
+    <br><br>
+
+    <ion-button routerLink="/login">CADASTRAR</ion-button>
+
+  </div>
+
+</ion-content>
