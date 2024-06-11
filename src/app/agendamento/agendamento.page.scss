@@ -32,6 +32,7 @@ ion-content {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: 10vh; /* Define a altura da tela inteira */
+    font-family:Georgia, 'Times New Roman', Times, serif;
     
   }
 
@@ -45,9 +46,7 @@ ion-content {
   h3{
     color: white;
     padding: 10px;
-    padding-top: 5%;
-    
-    
+    font-family:Georgia, 'Times New Roman', Times, serif;
     
   }
 
@@ -82,5 +81,52 @@ ion-fab[slot="fixed"] {
 ion-fab-button {
   --background: #1a2948;  
   --color: #b6b4b4; 
-  --bottom: -150px; 
+  --bottom: 100px; 
 }
+ion-radio::part(container) {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+ion-radio::part(mark) {
+  background: none;
+  transition: none;
+  transform: none;
+  border-radius: 0;
+}
+
+ion-radio.radio-checked::part(container) {
+  background: #6815ec;
+  border-color: transparent;
+}
+
+ion-radio.radio-checked::part(mark) {
+  width: 6px;
+  height: 10px;
+
+  border-width: 0px 2px 2px 0px;
+  border-style: solid;
+  border-color: #fff;
+
+  transform: rotate(45deg);
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  color: #fff;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.radio-item ion-radio {
+  margin-right: 10px; /* Espaçamento entre o botão de rádio e o rótulo */
+}
+

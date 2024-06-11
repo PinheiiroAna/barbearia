@@ -11,10 +11,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
-  },
+  
   {
     path: 'troca',
     loadChildren: () => import('./troca/troca.module').then( m => m.TrocaPageModule)
@@ -23,26 +20,18 @@ const routes: Routes = [
     path: 'servico',
     loadChildren: () => import('./servico/servico.module').then( m => m.ServicoPageModule)
   },
-  {
-    path: 'cadastro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
-  },
+  
   {
     path: 'agendamento',
     loadChildren: () => import('./agendamento/agendamento.module').then( m => m.AgendamentoPageModule)
   },
-  {
-    path: 'perfilc',
-    loadChildren: () => import('./perfilc/perfilc.module').then( m => m.PerfilcPageModule)
-  },
+ 
   {
     path: 'perfila',
     loadChildren: () => import('./perfila/perfila.module').then( m => m.PerfilaPageModule)
   },
+  
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
     path: 'failure',
     loadChildren: () => import('./failure/failure.module').then( m => m.FailurePageModule)
   },

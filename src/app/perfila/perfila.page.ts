@@ -13,3 +13,7 @@ export class PerfilaPage implements OnInit {
   }
 
 }
+
+/*if entrar com email projetokjkdfjskdjf
+aparecer pagin "perfila"
+else nao aparecer a pagina*/

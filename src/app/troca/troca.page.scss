@@ -1,52 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
-ion-toolbar {
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  color: white;
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fffefe;
+  margin: 0;
+}
+
+
+ion-title {
+  margin-left: 50px;
+}
+
+ion-content, ion-toolbar {
   --background: #3A4774;
-  /* Cor de fundo azul /
-  color: #fff;
-  / Cor do texto cinza */
-  margin: auto;
+  /* Define a cor de fundo para o ion-content e ion-toolbar */
   color: white;
 }
 
-/*  a cor de fundo  */
-ion-content {
-    --background: #3A4774; 
-  }
 
-  h1{
-    color: white;
-    font-size: 1.625rem;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 25vh; /* Define a altura da tela inteira */
-    font-family: "Platypi", sans-serif;
-  }
-  
-  p{
-    color: white;
-    margin: 0 30px
-  }
 
- ion-input{
-   --background: #1a2948; 
-   --color: #b6b4b4;
-   width: 200px; /* Define a largura */
-   margin: auto; /* Centraliza horizontalmente e verticalmente */
-   --border-radius: 100%
+ion-fab[slot="fixed"] {
+  position: absolute;
+  bottom: -150px; 
+  right: 0px;
+}
 
-  }
-
-  .botao-personalizado {
-    /* Estilos personalizados aqui */
-    --background: #1a2948; /* Cor de fundo azul */
-    color: #b6b4b4;
-    --border-width: 1px;
-    width: fit-content; /*largura do botão */
-    margin: auto; /* Centraliza horizontalmente e verticalmente */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-
-  }
-  
+ion-fab-button {
+  --background: #1a2948; 
+  --color: #b6b4b4; 
+} 
