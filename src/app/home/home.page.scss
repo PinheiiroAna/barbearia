@@ -14,23 +14,24 @@ ion-content {
 
 #container {
   text-align: center;
+ 
 }
 
 
 ion-button {
-  --background: #c1cbde;
-  /* Cor de fundo azul */
-  color: #000000;
-  /* Cor do texto cinza */
+  --background: #1a2948;
+  color: #b6b4b4;
+  display: flex;
+  padding: 10px 110px;
+  transition: box-shadow 0.3s ease;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.google img{
-  height: 25px;
-  --background: #1a2948;
-  margin: 10px;
-  }
-
+ion-input {
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 10%;
+}
 
 h3{
   text-align: center;

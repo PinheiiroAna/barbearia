@@ -4,23 +4,26 @@
 
 
 <ion-content [fullscreen]="true">
-<div class="main">
-  <div id="container">
-<br><br><br>
-    <img src="../../assets/Projeto/Logo.png" alt="Minha Imagem">
-    <H3> <strong>Bem-vindo!</strong></H3>
-<br><br>
-    <div class="google">
-      <ion-button 
-        (click)="loginWithGoogle()">
-      <img src="../../assets/Projeto/google.png" alt="">
-       <strong>LOGAR COM O GOOGLE</strong> 
-    
-  </ion-button>
-  </div>  
+  <div class="main">
+    <div id="container">
+      <br><br><br>
+      <img src="../../assets/Projeto/Logo.png" alt="Minha Imagem">
+      <H3> <strong>Bem-vindo!</strong></H3>
+      <br><br>
 
 
+      
+      <ion-input label="E-mail" id="email" name="email" label-placement="floating" 
+        fill="outline" placeholder="Digite seu e-mail" [(ngModel)]="email"></ion-input>
+
+      <br>
+
+      <ion-input label="Senha" id="password" name="password" label-placement="floating" 
+      fill="outline" placeholder="Digite sua senha" [(ngModel)]="password" type="password"></ion-input>
+
+      <ion-button (click)="login()">ENTRAR</ion-button>
+
+    </div>
+  
   </div>
-
-</div>
 </ion-content>

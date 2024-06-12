@@ -8,15 +8,21 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  email: string='';
+  password: string='';
+
+
 
   constructor(private authService: AuthService, private router: Router) {}
-  async loginWithGoogle() {
+ 
+  async login() {
     try {
-      await this.authService.signInWithGoogle();
+      await this.authService.signInWithEmail(this.email, this.password);
       this.router.navigate(['/servico']);
     } catch (error) {
       this.router.navigate(['/failure']);
     }
   }
+
 }
 
