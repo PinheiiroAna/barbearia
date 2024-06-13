@@ -6,23 +6,23 @@
   
   <div class="main">
     <div id="container">
-      <br><br>
+      <br>
       
       <H3> <strong>Cadastre-se!</strong></H3>
       <br>
 
-      <ion-input label="Nome" id="email" name="email" label-placement="floating" 
+      <ion-input label="Nome" id="nome" name="nome" label-placement="floating" 
       fill="outline" placeholder="Digite seu nome" ></ion-input>
 
       <br>
 
       <ion-input label="E-mail" id="email" name="email" label-placement="floating" 
-        fill="outline" placeholder="Digite seu e-mail" ></ion-input>
+        fill="outline" placeholder="Digite seu e-mail"  [(ngModel)]="email" ></ion-input>
 
       <br>
 
       <ion-input label="Senha" id="password" name="password" label-placement="floating" 
-      fill="outline" placeholder="Digitar Senha" type="password"></ion-input>
+      fill="outline" placeholder="Digitar Senha"  [(ngModel)]="password" type="password"></ion-input>
 
       <br>
 
@@ -31,8 +31,7 @@
 
       <br>
 
-      <ion-button> CADASTRAR </ion-button>
-      <p routerLink="/cadastro"> Ainda não tem Cadastro? Clique Aqui!</p>
+      <ion-button class="ion-margin-top" (click)="registrar"()> CADASTRAR </ion-button>
 
     </div>
   

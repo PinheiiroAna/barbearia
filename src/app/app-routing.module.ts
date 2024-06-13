@@ -34,7 +34,8 @@ const routes: Routes = [
   {
     path: 'failure',
     loadChildren: () => import('./failure/failure.module').then( m => m.FailurePageModule)
-  },  {
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },

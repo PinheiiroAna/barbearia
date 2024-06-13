@@ -11,9 +11,9 @@ export class HomePage {
   email: string='';
   password: string='';
 
-
-
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(
+    private authService: AuthService, 
+    private router: Router) {}
  
   async login() {
     try {
