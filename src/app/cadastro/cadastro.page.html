@@ -4,37 +4,45 @@
 
 <ion-content [fullscreen]="true">
   
-  <div class="main">
+  
     <div id="container">
       <br>
-      
+      <ion-buttons slot="start">
+        <ion-back-button default-href="#"></ion-back-button>
+      </ion-buttons>
+
       <H3> <strong>Cadastre-se!</strong></H3>
       <br>
 
       <ion-input label="Nome" id="nome" name="nome" label-placement="floating" 
-      fill="outline" placeholder="Digite seu nome" ></ion-input>
+      fill="outline" placeholder="Digite seu nome" required=""></ion-input>
 
       <br>
 
       <ion-input label="E-mail" id="email" name="email" label-placement="floating" 
-        fill="outline" placeholder="Digite seu e-mail"  [(ngModel)]="email" ></ion-input>
+        fill="outline" placeholder="Digite seu e-mail"  [(ngModel)]="email" required="" ></ion-input>
 
       <br>
 
       <ion-input label="Senha" id="password" name="password" label-placement="floating" 
-      fill="outline" placeholder="Digitar Senha"  [(ngModel)]="password" type="password"></ion-input>
-
+      fill="outline" 
+      placeholder="Digitar Senha"  [(ngModel)]="password" type="password" minlength="8"
+      maxlength="10" required="Limites 8 caracteres"></ion-input>
+      
       <br>
 
       <ion-input label="Confirmar Senha" id="password-confirmation" name="password-confirmation" label-placement="floating" 
-      fill="outline" placeholder="Confirmar Senha" type="password-confirmation"></ion-input>
-
+      fill="outline" placeholder="Confirmar Senha" type="password-confirmation"required=""></ion-input>
+      
       <br>
 
-      <ion-button class="ion-margin-top" (click)="registrar"()> CADASTRAR </ion-button>
+      <ion-button class="ion-margin-top" (click)="registrar()"> CADASTRAR </ion-button>
 
     </div>
-  
-  </div>
-
+    <div *ngIf="cadastroEfetuado" class="mensagem-sucesso">
+      Cadastro efetuado com sucesso!
+    </div>
+    <div *ngIf="mensagemErro" class="mensagem-erro">
+      {{ mensagemErro }}
+    </div>
 </ion-content>

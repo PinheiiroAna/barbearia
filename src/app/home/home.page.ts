@@ -10,6 +10,7 @@ import { AuthService } from '../service/auth.service';
 export class HomePage {
   email: string='';
   password: string='';
+cadastro: any;
 
   constructor(
     private authService: AuthService, 

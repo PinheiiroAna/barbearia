@@ -37,11 +37,15 @@
   (didDismiss)="setResult($event)"
 ></ion-alert>
 
+
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
       <ion-icon name="chevron-up-circle"></ion-icon>
-    </ion-fab-button>
+    </ion-fab-button>   
     <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="arrow-redo-outline" routerLink="/home"></ion-icon>
+      </ion-fab-button>
       <ion-fab-button>
         <ion-icon name="cog-outline" routerLink="/perfila"></ion-icon>
       </ion-fab-button>
@@ -55,6 +59,7 @@
         <ion-icon name="bag-handle-sharp" routerLink="/servico"></ion-icon>
       </ion-fab-button>
      
+
     </ion-fab-list>
   </ion-fab>
 </ion-content>

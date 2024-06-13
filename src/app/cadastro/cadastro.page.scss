@@ -1,4 +1,6 @@
-
+ion-back-button{
+  color: #ffffff;
+}
 
 ion-content {
     --background: #3A4774;
@@ -6,11 +8,6 @@ ion-content {
     margin: 5px;
   }
   
-  .main{
-    border: 1px solid #ffffff;
-    margin: 10px;
-    height: 97%;
-  }
   
   #container {
     text-align: center;
@@ -31,6 +28,7 @@ ion-content {
     width: 80%;
     margin-bottom: 10px;
     margin-left: 10%;
+    color: #ffffff;
   }
   
   h3{
@@ -40,3 +38,12 @@ ion-content {
     color: #ffffff;
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
+.mensagem-sucesso{
+color: #ffffff;
+text-align: center;
+}
+
+.mensagem-erro{
+color: #ffffff;
+text-align: center;
+}
