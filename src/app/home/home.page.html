@@ -6,10 +6,10 @@
 <ion-content [fullscreen]="true">
   <div class="main">
     <div id="container">
-      <br><br><br>
+      <br><br>
       <img src="../../assets/Projeto/Logo.png" alt="Minha Imagem">
       <H3> <strong>Bem-vindo!</strong></H3>
-      <br><br>
+      <br>
 
 
       
@@ -22,6 +22,7 @@
       fill="outline" placeholder="Digite sua senha" [(ngModel)]="password" type="password"></ion-input>
 
       <ion-button (click)="login()">ENTRAR</ion-button>
+      <p routerLink="/cadastro"> Ainda não tem Cadastro? Clique Aqui!</p>
 
     </div>
   

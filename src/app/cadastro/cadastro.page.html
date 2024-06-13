@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <link rel="stylesheet" type="text/css" href="cadastro.page.scss">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div class="main">
+    <div id="container">
+      <br><br>
+      
+      <H3> <strong>Cadastre-se!</strong></H3>
+      <br>
+
+      <ion-input label="Nome" id="email" name="email" label-placement="floating" 
+      fill="outline" placeholder="Digite seu nome" ></ion-input>
+
+      <br>
+
+      <ion-input label="E-mail" id="email" name="email" label-placement="floating" 
+        fill="outline" placeholder="Digite seu e-mail" ></ion-input>
+
+      <br>
+
+      <ion-input label="Senha" id="password" name="password" label-placement="floating" 
+      fill="outline" placeholder="Digitar Senha" type="password"></ion-input>
+
+      <br>
+
+      <ion-input label="Senha" id="password-confirmation" name="password-confirmation" label-placement="floating" 
+      fill="outline" placeholder="Confirmar Senha" type="password-confirmation"></ion-input>
+
+      <br>
+
+      <ion-button> CADASTRAR </ion-button>
+      <p routerLink="/cadastro"> Ainda não tem Cadastro? Clique Aqui!</p>
+
+    </div>
+  
+  </div>
+
+</ion-content>
