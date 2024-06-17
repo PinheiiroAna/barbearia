@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './guards/admin.guard';
 
 const routes: Routes = [
   {
@@ -28,17 +29,29 @@ const routes: Routes = [
  
   {
     path: 'perfila',
-    loadChildren: () => import('./perfila/perfila.module').then( m => m.PerfilaPageModule)
+    loadChildren: () => import('./perfila/perfila.module').then( m => m.PerfilaPageModule),
+    canActivate: [AdminGuard]
   },
-  
+
   {
     path: 'failure',
     loadChildren: () => import('./failure/failure.module').then( m => m.FailurePageModule)
   },
+
+  {
+    path: 'not-authorized',
+    loadChildren: () => import('./not-authorized/not-authorized.module').then(m => m.NotAuthorizedPageModule)
+  },
+  
   {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'not-authorized',
+    loadChildren: () => import('./not-authorized/not-authorized.module').then( m => m.NotAuthorizedPageModule)
   }
+
 
 ];
 

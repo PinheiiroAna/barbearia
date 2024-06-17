@@ -7,6 +7,8 @@ import firebase from 'firebase/compat/app';
   providedIn: 'root'
 })
 export class AuthService {
+  private adminEmail: string = 'admin@admin.com';
+  public isAdmin: boolean = false;
 
   constructor(private afAuth: AngularFireAuth, private router: Router) { }
 
@@ -26,7 +28,14 @@ export class AuthService {
   }
 
   
+  async login(email: string, password: string) {
+    try {
+      const result = await this.afAuth.signInWithEmailAndPassword(email, password);
+      this.isAdmin = (email === this.adminEmail);
+      this.router.navigate(['/perfila']);
+    } catch (error) {
+      console.log('Login error: ', error);
+    }
+  }
+
 }
-
-
-

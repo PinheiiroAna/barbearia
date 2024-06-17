@@ -21,4 +21,16 @@
       <ion-button class="sair" routerLink="/">Sair</ion-button>
     </div>
   </div>
+
+  <div *ngIf="authService.isAdmin">
+    <!-- Conteúdo do gerenciador de perfil admin -->
+    <h2>Admin Profile Manager</h2>
+    <!-- Adicione aqui o conteúdo do gerenciador de perfil admin -->
+  </div>
+
+  <div *ngIf="!authService.isAdmin">
+    <!-- Conteúdo para usuários comuns -->
+    <h2>User Profile</h2>
+    <!-- Adicione aqui o conteúdo para usuários comuns -->
+  </div>
 </ion-content>
