@@ -35,13 +35,15 @@ ion-toolbar {
     color: white;
   }
 
-ion-button{
+  ion-button {
+    --background: #ffffff;
+    color: #000000;
+    transition: box-shadow 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px; /* Tamanho da fonte */
+    padding: 10px 45px; /* Espaçamento interno do botão */
+    border-radius: 8px; /* Borda arredondada */
+  }
+  
 
-}
-
-.buton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+  

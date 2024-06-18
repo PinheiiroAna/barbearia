@@ -5,9 +5,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <h1>Você não tem permissão para acessar esta página. 
-  Clique no link abaixo para ser Redirecionado para a página inicial ... 
-<br> <br>
+  <h1>Não há permissão para acessar esta página. <br></h1>
+   <p>Favor clicar em <strong>"Página Inicial"</strong> para retornar à página inicial ou em
+   <strong>"Sair"</strong> para efetuar o logout do aplicativo.</p>
+  <br> <br>
 
-<a routerLink="/servico"> Página Inicial </a></h1>
+  <ion-button routerLink="/servico"> Página Inicial </ion-button>
+  <ion-button class="sair" routerLink="/home">Sair</ion-button>
 </ion-content>
