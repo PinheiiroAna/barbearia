@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 
+
 @Component({
   selector: 'app-perfila',
   templateUrl: './perfila.page.html',
@@ -14,7 +15,3 @@ export class PerfilaPage implements OnInit {
   }
 
 }
-
-/*if entrar com email projetokjkdfjskdjf
-aparecer pagin "perfila"
-else nao aparecer a pagina*/
