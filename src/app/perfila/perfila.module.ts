@@ -8,6 +8,8 @@ import { PerfilaPageRoutingModule } from './perfila-routing.module';
 
 import { PerfilaPage } from './perfila.page';
 
+import { BarbeirosService, Barbeiro } from '../service/barbeiro.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,7 @@ import { PerfilaPage } from './perfila.page';
     IonicModule,
     PerfilaPageRoutingModule
   ],
-  declarations: [PerfilaPage]
+  declarations: [PerfilaPage],
+  providers: [BarbeirosService] // Adicionando o serviço Barbeiro aos providers do módulo
 })
 export class PerfilaPageModule {}

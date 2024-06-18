@@ -18,16 +18,6 @@ ion-title{
     margin-left: 35px;
   }
   
-span{
-  color: #fff;
-}
-.main div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
-
 ion-content{
     --background: #3A4774;
 }
@@ -38,15 +28,60 @@ ion-toolbar {
     color: white;
   }
 
-  ion-button {
-    --background: #ffffff;
-    color: #000000;
-    transition: box-shadow 0.3s ease;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px; /* Tamanho da fonte */
-    padding: 10px 45px; /* Espaçamento interno do botão */
-    border-radius: 8px; /* Borda arredondada */
+ 
+  ion-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  ion-item {
+    --inner-padding-end: 1px; // Espaçamento interno do item
+    --inner-padding-start: 1px;
+    --inner-border-width: 0; // Remove a borda interna padrão
+    --background: #3A4774;
   }
   
+  ion-label {
+    font-size: 10px;
+    color: #fff; // Cor do texto dos rótulos
+  }
 
-  
+  ion-input {
+    font-size: 16px;
+    color: #000000; // Cor do texto dos inputs
+    border: 1px solid #1d1d1d; // Borda do campo de entrada
+    border-radius: 5px;
+    padding: 50px 10px;
+    background-color: #c2c2c2; // Cor de fundo do input
+  }
+
+  ion-buttons {
+    ion-button {
+      font-size: 14px;
+      --padding-end: 20px; // Espaçamento interno do botão
+      --padding-start: 20px;
+      --border-radius: 5px; // Borda arredondada do botão
+      --background: #fff; // Cor de fundo dos botões
+      color: #000; // Cor do texto dos botões
+      margin-left: 2px; // Margem à esquerda entre botões
+    }
+  }
+
+
+  .botao-acao:nth-child(2) {
+    margin-top: 10px; // Ajuste de margem entre os grupos de botões
+  }
+
+  .botao-acao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; // Ajuste de margem superior
+  }
+
+  ion-button {
+    --background: #fff;
+    color: #000;
+    transition: box-shadow 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px; /* Borda arredondada */
+  }
